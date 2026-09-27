@@ -1,0 +1,43 @@
+# AgriLinkX — Root .gitignore
+# Covers both backend and frontend at the project root level
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Node / npm
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment files — NEVER commit credentials
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+*.log
+logs/
+
+# Large Datasets
+data/raw/
+

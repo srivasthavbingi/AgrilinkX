@@ -1,0 +1,44 @@
+{
+  "comparison": [
+    {
+      "Model": "Optimized EMA Trend Regressor (Selected)",
+      "MAE": 0.3761,
+      "RMSE": 1.4153,
+      "MAPE": "2.43%",
+      "R2": 0.0873,
+      "Test_Rows": 546,
+      "Test_Date_Range": "2017-05-16 to 2017-06-21",
+      "Improvement_vs_Naive": "+4.00%"
+    },
+    {
+      "Model": "Naive Baseline (Current Price)",
+      "MAE": 0.3917,
+      "RMSE": 1.4259,
+      "MAPE": "2.53%",
+      "R2": 0.0736,
+      "Test_Rows": 546,
+      "Test_Date_Range": "2017-05-16 to 2017-06-21",
+      "Improvement_vs_Naive": "0.00%"
+    },
+    {
+      "Model": "Moving Average 7d",
+      "MAE": 0.3939,
+      "RMSE": 1.4372,
+      "MAPE": "2.58%",
+      "R2": 0.0589,
+      "Test_Rows": 546,
+      "Test_Date_Range": "2017-05-16 to 2017-06-21",
+      "Improvement_vs_Naive": "-0.54%"
+    },
+    {
+      "Model": "Previous Random Forest",
+      "MAE": 0.416,
+      "RMSE": 1.4709,
+      "MAPE": "2.65%",
+      "R2": 0.035,
+      "Test_Rows": 546,
+      "Test_Date_Range": "2017-05-16 to 2017-06-21",
+      "Improvement_vs_Naive": "-6.19%"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "rows_processed_total": 40921229,
+  "rows_retained_training_period": 7107852,
+  "rows_rejected": 0,
+  "rejection_reasons": {
+    "outside_2017_2026_period": 0,
+    "invalid_or_zero_modal_price": 0,
+    "invalid_date": 0,
+    "missing_market_or_state": 0
+  },
+  "anomalies_detected": {
+    "min_price_gt_max_price_count": 23395,
+    "modal_outside_min_max_count": 192632
+  }
+}
