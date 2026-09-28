@@ -7,8 +7,6 @@ import {
   SparklesIcon,
   MapPinIcon,
   SearchIcon,
-  ArrowRightIcon,
-  FilterIcon,
 } from '../components/Icons';
 import { recommendationEngine } from '../services/recommendationEngine';
 import { locationService } from '../services/locationService';
@@ -210,6 +208,16 @@ export default function Recommendations() {
       (!nearbyAlternative || item.id !== nearbyAlternative.id) &&
       (!bestPrice || item.id !== bestPrice.id)
   );
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+
+    if (loading) return;
+
+    navigate(
+      `/recommendations?query=${encodeURIComponent(query)}&qty=${quantity}&unit=${encodeURIComponent(unit)}&pref=${encodeURIComponent(preference)}`
+    );
+  };
 
   const handleSelectFarmer = (farmer) => {
     setSelectedFarmerForMap(farmer);
